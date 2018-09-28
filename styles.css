@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #00d66c;
 }
 
@@ -57,6 +57,17 @@ input[type="submit"] {
     box-shadow: inset 0 -5px #ca2b55;
     border-radius: 30px;
     color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.zoeken {
+    background-color: #2800a0;
+}
+
+input[type="text"]{
+    border-radius: 5px;
+    width: 15em;
 }
 
 
@@ -73,7 +84,7 @@ input[type="submit"] {
     color: black;
 }
 
-div {
+section div {
     background-color: #F4E6D8;
     display: flex;
     overflow-x: scroll;
@@ -84,6 +95,12 @@ div article {
     flex-shrink: 0;
     width: 10em;
     margin: 1em;
+}
+
+form div {
+    width: 16em;
+    display: flex;
+    flex-shrink: 0;
 }
 
 article > h2 {
@@ -162,4 +179,16 @@ nav label {
     float: left;
 }
 
-ul a {}
+ul {
+    list-style: none;
+}
+
+ul a {
+    color: #2800a0;
+    text-decoration: none;
+}
+
+
+
+
+
