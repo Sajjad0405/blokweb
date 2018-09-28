@@ -1,0 +1,165 @@
+body {
+    font-family: 'Nexa';
+    margin: 0 4.167em;
+    background-color: #fff;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #00d66c;
+}
+
+p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+section button {
+    padding: 0.833em 2.083em 1em;
+    background-color: #ff3268;
+    box-shadow: inset 0 -5px #ca2b55;
+    border-radius: 30px;
+    color: white;
+}
+
+section button:hover,
+section button:focus {
+    background-color: #ff658e;
+}
+
+form {
+    margin-top: 2em;
+}
+
+
+input {
+    float: left;
+}
+
+input:focus {
+    background-color: #e9e5f5;
+}
+
+legend {
+    font-weight: bold;
+}
+
+fieldset {
+
+    background-color: #F4E6D8;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 0.833em 2.083em 1em;
+    background-color: #ff3268;
+    box-shadow: inset 0 -5px #ca2b55;
+    border-radius: 30px;
+    color: white;
+}
+
+
+.close {
+    width: 1.67em;
+    float: left;
+    margin-right: 0.167em;
+}
+
+.filters {
+    padding: 0 0 0 1em;
+    border: 1px solid black;
+    background-color: #F4E6D8;
+    color: black;
+}
+
+div {
+    background-color: #F4E6D8;
+    display: flex;
+    overflow-x: scroll;
+
+}
+
+div article {
+    flex-shrink: 0;
+    width: 10em;
+    margin: 1em;
+}
+
+article > h2 {
+    background-color: white;
+    color: #00d66c;
+
+}
+
+section > h2 {
+    font-size: 1.4em;
+    color: #2800a0;
+}
+
+article {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 0.5em 0 1em;
+    margin-bottom: 0.9em;
+    color: #00d66c;
+    box-shadow: 2px 8px 12px -5px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 2px 8px 12px -5px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 8px 12px -5px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    font-size: 1em;
+    color: #606060;
+}
+
+fieldset button {
+    background-color: gainsboro;
+    padding: 0.417em;
+    margin: 1.25em;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 8.33em;
+    height: 4em;
+    display: block;
+    text-align: center;
+
+}
+
+fieldset button:hover {
+    color: white;
+    background-color: #5e40b8;
+}
+
+fieldset button:active {
+    color: white;
+    background-color: #2800a0;
+}
+
+article a {
+    padding: 1em 2em 0.9em;
+    background-color: #ff3268;
+    box-shadow: inset 0 -5px #ca2b55;
+    border-radius: 30px;
+    color: white;
+    width: 6em;
+    display: block;
+    text-decoration: none;
+
+}
+
+article > p {
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav img {
+    width: 4em;
+}
+
+nav label {
+    float: left;
+}
+
+ul a {}
