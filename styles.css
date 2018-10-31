@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Nexa';
     background-color: #fff;
@@ -168,6 +172,120 @@ header h1 {
     margin-top: 0;
 }
 
+/*form : Begin*/
+
+form {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 8em auto 0em auto;
+    border-radius: 0.5em;
+    flex-direction: column;
+}
+
+form p a {
+    color: #2800a0;
+}
+
+.login-main form {
+    background-color: white;
+}
+
+.login-main form fieldset {
+    background-color: white;
+}
+
+fieldset {
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin: auto;
+}
+
+legend {
+    font-weight: bold;
+    left: 0;
+    right: 0;
+    padding: 1.1em 0.5em;
+    color: #1f1799;
+    font-size: 1.7em;
+    background: white;
+    border-radius: 0.5em 0.5em 0 0;
+    margin-bottom: 1em;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+input[type="text"] {
+    height: 3em;
+    width: 9em;
+    font-size: 1.em;
+    border-radius: 0.5em;
+    border: #8397ae solid 1px;
+    padding: 0 0 0 1em;
+    color: #606060;
+    margin: 0.5em 0;
+    width: 90%;
+}
+
+input[type="submit"] {
+    margin-top: .7rem;
+    width: auto;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    padding: 0 1rem;
+    background: #FF3268;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    margin-bottom: 1rem;
+}
+
+input::placeholder {
+    color: #616160;
+}
+
+input:hover::placeholder {
+    color: #909090;
+}
+
+input:focus {
+    transform: scale(1.01, 1.01);
+}
+
+input[type="text"]:valid {
+    border: 1px solid green;
+}
+
+form:valid{
+}
+
+/*Zoekbalk :Start*/
+
+.zoek-form {
+    width: 100%;
+    margin-top: 0em;
+    background-color: #2800a0;
+    border-radius: 0em;
+}
+
+.zoek-form input[type="text"] {
+    border-radius: 0.5em;
+    width: 18em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Zoekbalk :Einde*/
+
+/*Form :Einde*/
+
 /*Algemeen header :Einde*/
 
 p {
@@ -322,7 +440,7 @@ article button {
     border: none;
     width: 2em;
     height: 2em;
-    margin-left: 14em;
+    margin-left: 13em;
     margin-top: -3.5em;
     position: absolute;
     transition: 0.5s ease;
@@ -476,76 +594,6 @@ ul a {
     background: transparent;
 }
 
-/*form : Begin*/
-
-form {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    margin: 8em auto 0em auto;
-    border-radius: 0.5em;
-    flex-direction: column;
-}
-
-form p a {
-    color: #2800a0;
-}
-
-fieldset {
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: center;
-    border: none;
-    margin: auto;
-    background-color: rgb(255, 255, 255, 0.7);
-}
-
-legend {
-    font-weight: bold;
-    left: 0;
-    right: 0;
-    padding: 1.1em 0.5em;
-    color: #1f1799;
-    font-size: 1.7em;
-    background: white;
-    border-radius: 0.5em 0.5em 0 0;
-    margin-bottom: 1em;
-}
-
-label {
-    font-size: 1.2em;
-    
-}
-
-input[type="text"] {
-    height: 3em;
-    width: 9em;
-    font-size: 1.em;
-    border-radius: 0.5em 0 0 0.5em;
-    border: #8397ae solid 1px;
-    padding: 0 0 0 1em;
-    color: #666;
-}
-
-input[type="submit"] {
-    margin-top: .7rem;
-    width: auto;
-    height: 2.5rem;
-    font-size: 1rem;
-    border-radius: 1.5rem;
-    padding: 0 1rem;
-    background: #FF3268;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
-    margin-bottom: 1rem;
-}
-
-
-/*Form :Einde*/
-
 /*Footer van de verhalen en de pagina : Start*/
 
 footer {
@@ -569,7 +617,7 @@ footer button {
     height: 1.5em;
     position: absolute;
     transition: 0.5s ease;
-    margin-left: 14em;
+    margin-left: 13em;
     margin-top: 0.8em;
 }
 
@@ -617,12 +665,12 @@ footer h3 {
     /*Verhaal-detail :Start*/
     .verhaal-header {
         background-image: none;
-        margin-bottom: -25em;
+        margin-bottom: -16em;
         margin-top: -1em;
     }
 
     .verhaal-main header {
-        margin-bottom: -21em;
+        margin-bottom: -10em;
         margin-top: -10em;
     }
 
@@ -645,12 +693,13 @@ footer h3 {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 30em;
+        height: 20em;
         padding-top: 1em;
     }
 
     header h1 {
-        width: 6em;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     nav ul {
@@ -674,11 +723,26 @@ footer h3 {
         width: 60em;
         margin: auto;
     }
-    /*Form*/
+    /*Form :Start*/
     form {
         max-width: 40%;
     }
 
+    .zoek-form {
+        max-width: 100%;
+        margin-top: 0em;
+        background-color: #2800a0;
+        border-radius: 0em;
+    }
+
+    .zoek-form input[type="text"] {
+        border-radius: 0.5em;
+        width: 30em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Form :Einde*/
     /*Footer-favorieten-empty :Start*/
     .fav-footer {
         margin-top: 13.5em;
@@ -796,10 +860,27 @@ footer h3 {
 
 @media(min-width: 36.125em) {
 
+    body {
+        font-size: 1em;
+    }
     /*form*/
     form {
         width: 60%;
         align-items: center;
+    }
+
+    .zoek-form {
+        max-width: 100%;
+        margin-top: 0em;
+        background-color: #2800a0;
+        border-radius: 0em;
+    }
+
+    .zoek-form input[type="text"] {
+        border-radius: 0.5em;
+        width: 30em;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /*Verhaal detial :Einde*/
